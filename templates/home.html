@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  type="text/css" href="styles/index.css">
-    <link rel="stylesheet"  type="text/css" href="styles/{{ style }}.css">
+    <link rel="stylesheet"  type="text/css" href="../styles/index.css">
+    <link rel="stylesheet"  type="text/css" href="../styles/{{ style }}.css">
     <title>{{ title }}</title>
 </head>
 <body>
-    
+    {{ include('partPage/head.html') }}
+    {{ include('partPage/footer.html') }}
+    <header>
+        
+    </header>
+    <footer>
+        &copy; Баяндин Павел Александрович 2023
+    </footer>
 </body>
 </html>
