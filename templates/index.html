@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="styles/index.css">
+    <link rel="stylesheet"  type="text/css" href="styles/{{ style }}.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+    {{ include ("modal.html") }}
+    <div class="authorizationWrap">
+        <div class="logo">
+            <img src="logo/logo.webp" alt="Логотип">
+        </div>
+        <form id="formAuth">
+            <div class="input_field">
+                <label for="email">Почта</label><br>
+                <input autofocus name="email" id="email" type="email">
+                <span class="info_email"></span>
+            </div>
+            <div class="input_field">
+                <label for="pass">Пароль</label><br>
+                <input name="pass" id="pass" type="password"> 
+                <span class="info_pass" ></span>
+            </div>
+            <div class="visibl_field" >
+                <input id="visibly" type="checkbox" name="visiblPass" onclick="
+                    if(this.checked){
+                        document.getElementById('pass').type='text';
+                    }
+                    else{
+                        document.getElementById('pass').type='password';
+                    }
+                ">
+                <label for="visibly">Показать пароль</label>
+            </div>
+            <div class="input_field">
+                <input id="submit_button" type="submit" value="Вход">
+            </div>
+        </form>
+    </div>
+    <script src="script\jq.js"></script>
+    <script src="script\modal.js"></script>
+    <script src="script\{{ style }}.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.authorizationWrap{
+    width: calc(450px - 3vw);
+    height: calc(500px - 5vh);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    border-radius: var(--border-radius);
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center ;
+}
+.logo{
+    width: 45%;
+}
+.logo > img{
+    width: 100%;
+}
+form{
+    width: 70%;
+    font-size:large;
+}
+form > *{
+    width: 100%;
+}
+.input_field{
+    margin: 5px;
+}
+.input_field  *{
+    width: 100%;
+    margin: 5px 0;
+}
+.input_field > input{
+    padding: 5px 10px;
+    width: calc( 100% - 20px );
+    border-radius: var(--border-radius);
+    border: 0px solid #000000
+}
+.visibl_field label{
+    margin: 0;
+}
+.visibl_field *{
+    width: auto !important; 
+    margin: 5px;
+}
+.info_email, .info_pass{
+    color: #c70000;
+    padding-left: 10px;
+}
+
+#submit_button{
+    text-align: center;
+    width: 100%;
+}

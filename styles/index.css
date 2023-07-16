@@ -1,0 +1,12 @@
+:root{
+    --underline-color: #f5ea50;
+    --main-color: #98fb98;
+    --text-color: #000000;
+    --border-radius:20px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
