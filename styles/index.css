@@ -3,6 +3,8 @@
     --main-color: #98fb98;
     --text-color: #000000;
     --border-radius:20px;
+    --height-main: 98%;
+    --height-footer:2%;
 }
 *{
     padding: 0;

@@ -1,0 +1,11 @@
+body{
+    display: block;
+    height: 100vh;
+}
+main{
+    height: var(--height-main);
+    display:flex;
+}
+footer{
+    height: var(--height-footer);
+}
